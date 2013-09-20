@@ -1,0 +1,5 @@
+name: cookie
+version: 0.0.1
+author: Analogic s.r.o. <info@analogic.cz>
+homepage: https://github.com/analogic/cookie
+description: Simple cookies manipulation (browser side) with api like jquery.cookie
