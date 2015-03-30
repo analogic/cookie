@@ -6,7 +6,7 @@ String _decode(s) => Uri.decodeComponent(s.replaceAll(r"\+", ' '));
 String _format_date(DateTime datetime) {
   /* To Dart team: why i have to do this?! this is so awkward (need native JS Date()!!§) */
   var day = ['Mon', 'Tue', 'Wed', 'Thi', 'Fri', 'Sat', 'Sun'];
-  var mon = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', Dec'];
+  var mon = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
  
   var _int_to_string = (int i, int pad) {
     var str = i.toString();
