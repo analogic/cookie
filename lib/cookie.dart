@@ -24,8 +24,6 @@ String _format_date(DateTime datetime) {
 }
 
 String get([String key]) {
-  var result = new Map();
-  
   var cookies = document.cookie != null ? document.cookie.split('; ') : [];
 
   for (var i = 0, l = cookies.length; i < l; i++) {
@@ -36,6 +34,8 @@ String get([String key]) {
       return parts[1] != null ? _decode(parts[1]) : null;
     }
   }
+
+  return null;
 }
 
 void set(String key, String value, {expires, path, domain, secure}) {
